@@ -27,11 +27,11 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
+            <div class="header-text" data-aos="zoom-out" data-aos-duration="1000">
                 <p>Software|Web Developer</p>
                 <h1>Hi, I'm <span>Umesh Patil</span></h1>
             </div>
-            <div class="social-icons">
+            <div class="social-icons" data-aos="zoom-in-right" data-aos-duration="1000">
                 <a href="https://github.com/umeshh09"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/umesh-patil-b09916211/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/_umeshh_xix/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
@@ -43,10 +43,10 @@
     <div id="about">
         <div class="conatainer">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false" >
                     <img src="background/wallpaperflare-cropped (1).jpg" alt="">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-once="false">
                     <h1 class="subtitle">About Me</h1>
                     <p>I've been exposed to C, C++,core JAVA Programming Languages along with Data Structures and Algorithms. 
                         Currently, I'm exploring front-end technologies like React, jQuery. In addition to this, 
@@ -83,14 +83,14 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div data-aos="zoom-out-left" data-aos-duration="1000" data-aos-once="false">
                     <i class="fa-solid fa-crop"></i>
                     <h2>Web Design</h2>
                     <p>the process of creating a website application that delivers a seamless user experience (UX) and meets users' 
                         core needs with a clear, compelling user interface (UI).</p>
                         <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-once="false">
                     <i class="fa-solid fa-laptop-code"></i>
                     <h2>Software Development</h2>
                     <p> design, develop and maintain applications, 
@@ -98,7 +98,7 @@
                         </p>
                         <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div data-aos="zoom-out-right" data-aos-duration="1000" data-aos-once="false">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Developement</h2>
                     <p>design, develop and maintain applications, frameworks or other software components 
@@ -114,24 +114,24 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="/bg2/banner5.jpg">
+                <div class="work" data-aos="slide-right" data-aos-duration="1000" data-aos-once="false">
+                    <img src="/bg2/banner2.jpg">
                     <div class="layer">
                         <h3>Car Dealership</h3>
                         <p>This project can manage your car showroom.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="/bg2/banner2.jpg">
+                <div class="work" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="false">
+                    <img src="/bg2/banner5.jpg">
                     <div class="layer">
                         <h3>Hospital Management System</h3>
                         <p>This project can manage hospital management and store the data of it.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="https://github.com/umeshh09/Portfolio.github.io/blob/main/bg2/banner.jpg">
+                <div class="work" data-aos="slide-left" data-aos-duration="1000" data-aos-once="false">
+                    <img src="/bg2/banner.jpg">
                     <div class="layer">
                         <h3>Voice Assistant</h3>
                         <p>This project can be your personal assistant.</p>
@@ -223,5 +223,10 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
