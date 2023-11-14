@@ -174,10 +174,21 @@
         </div>
     </div>
 
+    <!-- ---------------top-scroll---------- -->
+    <a href="#" class="top-scroll"><i class="fa-solid fa-angle-up fa-beat-fade"></i></a>
 
+    <script>
+        const topscroll = document.querySelector(".top-scroll");
 
-
-
+        window.addEventListener("scroll" , () => {
+            if(window.pageYOffset > 100){
+                topscroll.classList.add("active");
+            }else{
+                topscroll.classList.remove("active");
+            }
+        })
+           
+    </script>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
